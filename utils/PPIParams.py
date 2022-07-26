@@ -3,11 +3,11 @@ import numpy as np
 from tensorflow.python.keras.layers import ReLU, LeakyReLU, PReLU, ELU
 from tensorflow.python.keras.initializers import GlorotUniform, GlorotNormal, he_uniform, he_normal, lecun_uniform, lecun_normal, \
                                                  Orthogonal, TruncatedNormal, VarianceScaling
-from PPILogger import PPILoggerCls
-from PPIDataset import PPIDatasetCls, DatasetParams
-from PPILoss import PPILossCls, LossParams
-from PPITrainTest import PPITrainTestCls, TrainingParams
-from PPIExplanation import PPIExplanationCls
+from utils.PPILogger import PPILoggerCls
+from utils.PPIDataset import PPIDatasetCls, DatasetParams
+from utils.PPILoss import PPILossCls, LossParams
+from utils.PPITrainTest import PPITrainTestCls, TrainingParams
+from utils.PPIExplanation import PPIExplanationCls
 
 class PPIParamsCls(object):
     EX_COLUMNS = [

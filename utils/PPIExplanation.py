@@ -12,8 +12,8 @@ from tensorflow.keras.layers import Flatten
 
 import shap
 
-from PPIDataset import PPIDatasetCls, DatasetParams
-from PPITrainTest import TrainingParams
+from utils.PPIDataset import PPIDatasetCls, DatasetParams
+from utils.PPITrainTest import TrainingParams
 
 logger = None
 

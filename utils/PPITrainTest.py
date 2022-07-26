@@ -29,9 +29,9 @@ from tensorflow.keras.callbacks import Callback, EarlyStopping, ModelCheckpoint,
 
 from treelib import Tree, Node
 
-from PPIDataset import PPIDatasetCls, DatasetParams
-from PPILoss import PPILossCls, LossParams
-from PPIPredPlot import PPIPredPlotCls, PPIPredMericsCls
+from utils.PPIDataset import PPIDatasetCls, DatasetParams
+from utils.PPILoss import PPILossCls, LossParams
+from utils.PPIPredPlot import PPIPredPlotCls, PPIPredMericsCls
 from Attention import AttentionLayer
 
 # you can't put these statements in a function. Setting seed doesn't have any effect any more.

@@ -11,7 +11,7 @@ from tensorflow.keras import losses as L
 import tensorflow as tf
 #import tensorflow.compat.v1 as tf
 
-from PPIDataset import DatasetParams
+from utils.PPIDataset import DatasetParams
 
 logger = None
 

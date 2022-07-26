@@ -13,18 +13,18 @@ from tensorflow.keras.layers import Lambda, Reshape, Input, concatenate, Conv2D,
                                            BatchNormalization, Conv2DTranspose, ZeroPadding2D, Dropout, UpSampling2D, UpSampling1D, \
                                            LSTM, GRU, TimeDistributed, Bidirectional, Dense, Add, ConvLSTM2D, Flatten, AveragePooling1D, \
                                            ReLU, LeakyReLU, PReLU, ELU
-from PPILogger import PPILoggerCls
-from PPIDataset import PPIDatasetCls, DatasetParams
-from PPILoss import PPILossCls, LossParams
-from PPITrainTest import PPITrainTestCls, TrainingParams
-from PPIParams import PPIParamsCls
-from PPIExplanation import PPIExplanationCls, ExplanationParams, ExpTypes, GroupByTypes
+from utils.PPILogger import PPILoggerCls
+from utils.PPIDataset import PPIDatasetCls, DatasetParams
+from utils.PPILoss import PPILossCls, LossParams
+from utils.PPITrainTest import PPITrainTestCls, TrainingParams
+from utils.PPIParams import PPIParamsCls
+from utils.PPIExplanation import PPIExplanationCls, ExplanationParams, ExpTypes, GroupByTypes
 
 class AlgParams:
     ALGRITHM_NAME = "ann-ppi"
     DatasetParams.USE_COMET = False #True
     
-    datasetLabel = 'Biolip_N'
+    datasetLabel = 'Biolip_P'
     dataset = DatasetParams.FEATURE_COLUMNS_BIOLIP_WIN
     
     ONLY_TEST = True #False
